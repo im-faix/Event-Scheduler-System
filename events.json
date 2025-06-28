@@ -1,0 +1,26 @@
+[
+  {
+    "id": "3447c99b-a4ac-4b10-911a-97ee72637f24",
+    "title": "Team Meeting",
+    "description": "Sprint planning discussion",
+    "start_time": "2025-07-01T10:00:00",
+    "end_time": "2025-07-01T11:00:00",
+    "recurrence": null
+  },
+  {
+    "id": "event3",
+    "title": "Updated Title",
+    "description": "Updated event description",
+    "start_time": "2025-06-28T10:00:00",
+    "end_time": "2025-06-028T11:00:00",
+    "recurrence": null
+  },
+  {
+    "id": "event3",
+    "title": "Project Kickoff",
+    "description": "Initial meeting with stakeholders",
+    "start_time": "2025-07-01T09:00:00",
+    "end_time": "2025-07-01T10:00:00",
+    "recurrence": null
+  }
+]
