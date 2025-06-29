@@ -21,38 +21,21 @@ A simple and lightweight Python REST API for scheduling, updating, and managing 
 
 ## 🚀 How to Run
 
-### 1. Clone the Repository
+###  Clone the Repository
 
 ```bash
 git clone https://github.com/yourusername/event-scheduler-api.git
 cd event-scheduler-api
 ```
 
-### 2. Create Virtual Environment
 
-```bash
-python -m venv venv
-```
-
-### 3. Activate Virtual Environment
-
-- **Windows**:
-```bash
-venv\Scripts\activate
-```
-
-- **Linux/macOS**:
-```bash
-source venv/bin/activate
-```
-
-### 4. Install Dependencies
+###  Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Run the Application
+###  Run the Application
 
 ```bash
 python app.py
