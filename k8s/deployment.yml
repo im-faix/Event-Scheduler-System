@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: event
+  namespace: dev
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: event
+  template:
+    metadata:
+      labels:
+        app: event
+    spec:
+      containers:
+        - name: event-app
+          image: event_new:v1   # Replace with your actual image tag
+          ports:
+            - containerPort: 9000
+            
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: event
+  namespace : dev
+spec:
+  type: NodePort
+  selector:
+    app: event
+  ports:
+    - port: 9000
+      targetPort: 9000
+      nodePort: 30036

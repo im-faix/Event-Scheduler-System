@@ -62,4 +62,5 @@ def search():
 
 if __name__ == '__main__':
     start_reminder_thread(events)
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=9000, debug=True)
+
