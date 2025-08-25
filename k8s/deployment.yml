@@ -4,7 +4,7 @@ metadata:
   name: event
   namespace: dev
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: event
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: event-app
-          image: event_new:v1   # Replace with your actual image tag
+          image: abdullah77044/event_new:v1   # Replace with your actual image tag
           ports:
             - containerPort: 9000
             

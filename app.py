@@ -8,6 +8,12 @@ app = Flask(__name__)
 EVENTS_FILE = 'events.json'
 events = load_events(EVENTS_FILE)
 
+
+@app.route('/')
+def home():
+    return "Hello from Event Scheduler!"
+
+
 @app.route('/events', methods=['POST'])
 def create_event():
     data = request.json
