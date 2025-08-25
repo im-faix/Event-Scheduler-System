@@ -11,7 +11,8 @@ events = load_events(EVENTS_FILE)
 
 @app.route('/')
 def home():
-    return "Hello from Event Scheduler!"
+    return render_template('home.html')
+
 
 
 @app.route('/events', methods=['POST'])
