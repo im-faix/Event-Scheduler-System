@@ -1,9 +1,8 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify , render_template
 from uuid import uuid4
 from datetime import datetime
 from utils import load_events, save_events, find_event, search_events
 from reminder_thread import start_reminder_thread
-
 app = Flask(__name__)
 EVENTS_FILE = 'events.json'
 events = load_events(EVENTS_FILE)
