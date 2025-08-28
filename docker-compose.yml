@@ -1,7 +1,7 @@
 version : "3.8"
 services :
   event:
-    image : abdullah77044/event_new:v1
+    image : abdullah77044/event_new:v3
     container_name : event-container
     ports :
       - "9000:9000"
