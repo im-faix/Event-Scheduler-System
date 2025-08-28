@@ -92,6 +92,8 @@ A ready-to-use Postman collection is included.
 ├── test_app.py             # Pytest test cases
 ├── events.json             # Persistent data file
 ├── requirements.txt        # Dependencies
+├── Dockerfile              # to build an Dockerimage of the application
+├── k8s/                    # this directory is related to kubernetes deployment , services and namespace
 └── README.md               # Project overview
 ```
 
@@ -110,5 +112,17 @@ A ready-to-use Postman collection is included.
 Mohammed Faizan
 
 > [GitHub](https://github.com/im-faix) · [LinkedIn](https://linkedin.com/in/faizan9)
+
+## For Deployment
+- for building an image use this commands
+  ```bash
+  docker build -t imagename:version .
+  ```
+  - for kuberenetes
+  -  switch or navigate to k8s/ directory
+    ```bash
+    cd k8s/
+    kubectl apply -f .
+    ```
 
 
